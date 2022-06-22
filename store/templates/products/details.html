@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Product Details{% endblock %}
+
+{% block content %}
+  <Table>
+    <tr>
+        <td>{{product.name}}</td>
+        <td colspan="2">
+            <img src="{% static 'home/' %}{{product.image}}" height="200px">
+        </td>
+    </tr>
+    <tr><td>{{product.description}}</td></tr>
+  </Table>
+
+  <a href="{% url 'Products' %}" >back to products</a>
+{% endblock %}

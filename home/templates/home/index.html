@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Products{% endblock %}
+
+{% block content %}
+    <p1>welcome to city store website!</p1>
+<div>
+    <span>Go to <a href="{% url 'Products'%}">products</a></span>
+</div>
+<div>
+    <span>new user? <a href="{% url 'Register'%}">Register</a></span>
+</div>
+
+{% endblock %}
